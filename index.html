@@ -285,6 +285,19 @@
 						<option value="My prompt is more important">+prompt</option>
 						<option value="ControlNet is more important">+CN</option>
 					</select>
+					<input
+						type="checkbox"
+						id="cbxCFGRescale"
+						onchange="changeCFGRescaleExtension()"
+						disabled="disabled" />
+					<label for="cbxCFGRescale">CFG Rescale</label>
+					<br class="CFGRescaleElement" />
+					<div id="CFGRescale" class="CFGRescaleElement"></div>
+					<input
+						type="checkbox"
+						id="cbxDDIMTrailing"
+						class="CFGRescaleElement" />
+					<label for="cbxDDIMTrailing" class="CFGRescaleElement">DDIM Trailing</label>
 				</div>
 				<!-- Save/load image section -->
 				<button type="button" class="collapsible">Save/Upscaling</button>
@@ -531,7 +544,7 @@
 		<!-- Basics -->
 		<script src="js/global.js?v=ac30d16" type="text/javascript"></script>
 		<script src="js/defaults.js?v=5b06818" type="text/javascript"></script>
-		<script src="js/extensions.js?v=0bd1fbe" type="text/javascript"></script>
+		<script src="js/extensions.js?v=14885c8" type="text/javascript"></script>
 
 		<!-- Base Libs -->
 		<script src="js/lib/util.js?v=379aef7" type="text/javascript"></script>
@@ -557,7 +570,7 @@
 
 		<!-- Content -->
 		<script src="js/prompt.js?v=7a1c68c" type="text/javascript"></script>
-		<script src="js/index.js?v=425e27d" type="text/javascript"></script>
+		<script src="js/index.js?v=73376d8" type="text/javascript"></script>
 
 		<script
 			src="js/ui/floating/history.js?v=4f29db4"
@@ -571,7 +584,7 @@
 			src="js/ui/tool/generic.js?v=3e678e0"
 			type="text/javascript"></script>
 
-		<script src="js/ui/tool/dream.js?v=aa8c906" type="text/javascript"></script>
+		<script src="js/ui/tool/dream.js?v=0c3bce8" type="text/javascript"></script>
 		<script
 			src="js/ui/tool/maskbrush.js?v=e9bd0eb"
 			type="text/javascript"></script>
